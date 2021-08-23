@@ -1,0 +1,153 @@
+html {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+@media (min-width: 600px) {
+    html {
+        font-size: calc(7px + 100vw * 0.015);
+    }
+}
+@media (min-width: 1000px) {
+    html {
+        font-size: 22px;
+    }
+
+    .cont {
+        grid-template-areas: "header header header header"
+        "subheader subheader subheader subheader"
+        "name phone email submit"
+    }
+
+    .i1 {
+        grid-area: header;
+        max-width: 1200px;
+    }
+
+    .i2 {
+        grid-area: subheader;
+    }
+
+    .i3 {
+        grid-area: name;
+    }
+
+    .i4 {
+        grid-area: phone;
+    }
+
+    .i5 {
+        grid-area: email;
+    }
+
+    .sub {
+        grid-area: submit;
+    }
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.dontknower {
+    background-color: #777779;
+    min-height: 100px;
+}
+
+.displayer {
+    background-color: #777779;
+    min-height: 100px;
+}
+
+.suggester {
+    background-color: #777779;
+    font-size: 40px;
+    padding: 30px;
+}
+
+.editor {
+    background-color: #777779;
+    padding: 10px;
+    font-size: 30px;
+    caret-color: transparent;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: minmax(600px, 5fr) minmax(500px, 4fr);
+    grid-template-rows: 500px 500px;
+}
+
+.cont {
+    display: grid;
+    grid-auto-flow: row;
+    height: 450px;
+    padding: 90px 80px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 330px));
+    background-color: #cd4d85;
+    grid-gap: 20px;
+    direction: rtl;
+    background-image: url('../join-news-new3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 38%;
+    font-size: calc(0.5vw + 10);
+}
+
+.i1 {
+    font-size: 193%;
+    color: white;
+    align-self: start;
+    margin-bottom: 3vw;
+}
+
+.i2 {
+    font-size: 180%;
+    margin-bottom: 5vw;
+}
+
+
+
+*::placeholder {
+    color: blok;
+    opacity: 5;
+    font-weight: 900;
+}
+
+input {
+    opacity: 0.2;
+    border: 1px solid white;
+    height: 40px;
+    direction: rtl;
+    padding: 0px 10px;
+    cursor: text;
+    appearance: none;
+}
+
+button {
+    height: 40px;
+    font-size: calc(0.5vw + 10);
+    font-weight: bold;
+}
+
+.i3 {
+    border: 1.5px solid white;
+}
+
+.i4 {
+}
+
+.i5 {
+}
+
+.sub {
+    color: white;
+    border: none;
+    background-color: darkorange;
+    width: 60%;
+}

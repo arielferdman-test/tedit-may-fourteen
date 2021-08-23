@@ -1,0 +1,8 @@
+libgtk-3-0
+libglib2.0-0
+libgstreamer1.0-0
+gstreamer-pbutils
+gstreamer-pulseaudio 
+gstreamer-plugins-base 
+gstreamer-plugins-good
+libdbus-1-3
