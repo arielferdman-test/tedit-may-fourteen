@@ -42,7 +42,7 @@ window.onload = () => {
         handle_keypress(e);
     })
 
-    print_suggest('<div style="margin-left: 40%; margin-top: 10px; font-size: 40px;">Statement Mode</div>');
+    print_suggest('<div style="margin-left: 30%; margin-top: 10px; font-size: 40px;">Statement Mode</div>');
     let div_open = '<div';
     let div_rbracket = '>';
     let div_close = '</div>';
